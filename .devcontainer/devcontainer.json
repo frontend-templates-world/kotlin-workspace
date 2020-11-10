@@ -13,7 +13,8 @@
 		"redhat.java",
 		"yzhang.markdown-all-in-ones",
 		"vscjava.vscode-maven",
-		"eamodio.gitlens"
+		"eamodio.gitlens",
+		"mathiasfrohlich.kotlin"
     ],
     "postCreateCommand": "java --version"
 }
