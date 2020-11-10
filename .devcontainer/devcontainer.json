@@ -1,0 +1,19 @@
+{
+    "name": "Kotlin Cross-plateform",
+    "image": "zenika/kotlin:1.4.20-jdk11",
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+	"extensions": [
+		"aaron-bond.better-comments",
+		"pkief.material-icon-theme",
+		"vscjava.vscode-java-debug",
+		"eamodio.gitlens",
+		"kisstkondoros.vscode-gutter-preview",
+		"redhat.java",
+		"yzhang.markdown-all-in-ones",
+		"vscjava.vscode-maven",
+		"eamodio.gitlens"
+    ],
+    "postCreateCommand": "java --version"
+}
