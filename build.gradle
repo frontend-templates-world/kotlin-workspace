@@ -31,3 +31,14 @@ dependencies {
     // Use the Kotlin JUnit integration.
     testImplementation 'org.jetbrains.kotlin:kotlin-test-junit'
 }
+
+jar {
+    archivesBaseName = 'kotlin-workspace'
+    manifest {
+        attributes("Main-Class": "Library",
+                "Implementation-Title": "kotlin-workspace",
+                "Implementation-Version": "0.1.0")
+    }
+    exclude 'META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA'
+    from { configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+}
